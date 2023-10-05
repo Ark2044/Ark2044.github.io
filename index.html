@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+         <nav class="navbar">
+            <h1>Aarush Wasnik</h1>
+            <div class="navmenu">
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect</a> 
+            </div>
+         </nav>
+
+         <section class="heroSection">
+            <img class="profileImage"  src="/images/person-svgrepo-com.svg">
+            <div>
+                <h1 class="heroSectionDetails">
+                    Aarush Wasnik
+                </h1>
+                <h3>
+                    Senior Webmaster at NSS CRCE
+                </h3> 
+            </div>
+         </section>
+
+         <section class="aboutMe" id="aboutMe">
+            <h1>
+                About Me
+            </h1>
+
+            <p>
+                I am a web developer with a passion for creating user-friendly websites.
+            </p>
+         </section>
+
+         <section class="skillsProjects">
+            <div class="skills" id="skills">
+                <h1 class="cardHeading">Skills</h1>
+                <img src="/images/html-5-svgrepo-com.svg" title="HTML">
+                <img src="/images/css-3-svgrepo-com.svg" title="CSS">
+                <img src="/images/javascript-svgrepo-com.svg" title="JavaScript">
+                <img src="/images/nodejs-svgrepo-com.svg" title="Node.JS">
+                <img src="/images/mongodb-logo-svgrepo-com.svg" title="MongoDB">
+            </div>
+
+            <div class="projects" id="projects">
+                <h1 class="cardHeading">Projects</h1>
+                <div class="projectContainer">
+                    <img src="/images/project-svgrepo-com.svg">
+                    <div class="projectDescription">
+                        <h4>Project Name</h4>
+                        <p>Details</p>
+                    </div>
+
+                    <img src="/images/project-svgrepo-com.svg">
+                    <div class="projectDescription">
+                        <h4>Project Name</h4>
+                        <p>Details</p>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+
+         <section class="contactForm" id="contctForm">
+            <h1>Let's Connect</h1>
+            <div class="formGroup">
+                <label for="name">Enter Full Name</label><br>
+                <input type="text" id="name" placeholder="Full Name">
+            </div>
+
+            <div class="formGroup">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+
+            <div class="formGroup">
+                <label for="message">Message</label><br>
+                <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+            </div>
+
+            <button class="submitButton" onClick={submit()}>Connect</button>
+         </section>
+
+        <!-- Download Resume Button -->
+        <a href="resume.pdf" download="your-resume.pdf" class="resume-button">Download Resume</a>
+
+    </main>
+</body>
+</html>
